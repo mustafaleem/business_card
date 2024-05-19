@@ -21,6 +21,7 @@ class businesscard extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 30,
+                fontFamily: 'Pacifico',
               ),
             ),
           ],
