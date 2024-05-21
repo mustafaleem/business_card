@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(businesscard());
+  runApp(businessCard());
 }
 
-class businesscard extends StatelessWidget {
+class businessCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
         body: Column(
@@ -48,7 +48,7 @@ class businesscard extends StatelessWidget {
                   color: Color(0xFF2B475E),
                 ),
                 title: Padding(
-                  padding: const EdgeInsets.only(left: 35),
+                  padding: EdgeInsets.only(left: 35),
                   child: Text(
                     '01003874099',
                     style: TextStyle(fontSize: 24, color: Color(0xFF2B475E)),
@@ -65,7 +65,7 @@ class businesscard extends StatelessWidget {
                   color: Color(0xFF2B475E),
                 ),
                 title: Padding(
-                  padding: const EdgeInsets.only(left: 35),
+                  padding: EdgeInsets.only(left: 35),
                   child: Text(
                     'info@mustafaleem.com',
                     style: TextStyle(fontSize: 24, color: Color(0xFF2B475E)),
