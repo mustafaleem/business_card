@@ -11,6 +11,7 @@ class businesscard extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               backgroundImage: AssetImage('images/MUSTAFA.jpg'),
@@ -31,38 +32,47 @@ class businesscard extends StatelessWidget {
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.white,
+            Divider(
+              color: Color(0XFF6C8090),
+              thickness: 3,
+              endIndent: 60,
+              indent: 60,
+              height: 30,
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 32,
+                  color: Color(0xFF2B475E),
                 ),
-                child: Row(
-                  children: [
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Icon(
-                      Icons.phone,
-                      size: 32,
-                      color: Color(0xFF2B475E),
-                    ),
-                    Spacer(
-                      flex: 2,
-                    ),
-                    Text(
-                      '01003874099',
-                      style: TextStyle(fontSize: 21, color: Color(0xFF2B475E)),
-                    ),
-                    Spacer(
-                      flex: 4,
-                    )
-                  ],
+                title: Padding(
+                  padding: const EdgeInsets.only(left: 35),
+                  child: Text(
+                    '01003874099',
+                    style: TextStyle(fontSize: 24, color: Color(0xFF2B475E)),
+                  ),
                 ),
               ),
-            )
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: Icon(
+                  Icons.message,
+                  size: 32,
+                  color: Color(0xFF2B475E),
+                ),
+                title: Padding(
+                  padding: const EdgeInsets.only(left: 35),
+                  child: Text(
+                    'info@mustafaleem.com',
+                    style: TextStyle(fontSize: 24, color: Color(0xFF2B475E)),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
